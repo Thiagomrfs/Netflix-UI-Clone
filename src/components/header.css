@@ -1,0 +1,27 @@
+header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1.5rem;
+    background: transparent;
+    transition: all ease 0.5s;
+}
+
+header.black {
+    background: #111;
+}
+
+header .logo, header .userImg {
+    height: 2rem;
+    align-items: center;
+}
+
+header .logo img, header .userImg img {
+    height: 100%;
+}

@@ -1,0 +1,116 @@
+.featured {
+    height: 100vh;
+}
+
+.featured .fade--vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent);
+}
+
+.featured .fade--horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.8rem;
+    padding-bottom: 8rem;
+    padding-top: 70px;
+}
+
+.featured--name {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured--metadata {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    display: inline-block;
+}
+
+.featured--metadata .points,
+.featured--metadata .year,
+.featured--metadata .seasons {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.featured--metadata .points {
+    color: #46d369;
+}
+
+.featured--description {
+    margin-top: 0.9rem;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+.featured--buttons {
+    margin-top: 0.9rem;
+}
+
+.button--watch, .button--mylist {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.9rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-right: 0.8rem;
+    transition: 400ms;
+    opacity: 1;
+}
+
+.button--watch:hover, .button--mylist:hover {
+    opacity: 0.6;
+}
+
+.button--watch {
+    background: #fff;
+    color: #111
+}
+
+.button--mylist {
+    background: #333;
+    color: #fff
+}
+
+.featured--genres {
+    margin-top: 1rem;
+    font-size: 18px;
+    color: #999
+}
+
+
+@media (max-width: 760px) {
+    .featured {
+        height: 90vh;
+    }
+
+    .featured--name {
+        font-size: 40px;
+    }
+
+    .featured--info {
+        font-size: 16px;
+    }
+
+    .featured--description {
+        font-size: 14px;
+        max-width: 80%;
+        margin-right: 30px;
+    }
+
+    .button--watch, .button--mylist {
+        font-size: 16px;
+    }
+
+    .featured--genres {
+        font-size: 14px;
+    }
+}
